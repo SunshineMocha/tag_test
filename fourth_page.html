@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terza pagina di esempi</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">prima pagina esempi</a>
+        <a href="./third_page.html">seconda pagina esempi</a>
+      </nav> <br>
+
+      <button onclick="showContent()">Mostra contenuto nascosto</button> <br> <br>
+
+      <template>
+        <h2>Esercizi per i polsi</h2>
+        <img src="./assets/Esercizi.jpg">
+      </template>
+      
+      <script>
+      function showContent() {
+        var temp = document.getElementsByTagName("template")[0];
+        var clon = temp.content.cloneNode(true);
+        document.body.appendChild(clon);
+      }
+      </script> <br>
+
+    <label for="commenti">Box di testo per i commenti</label> <br> <br>
+
+    <textarea id="commenti" name="commenti" rows="4" cols="50">
+    Boh, questa é una casella testuale 
+    </textarea> <br> <br>
+
+    <p>il corso parte alle <time>08:30</time> e finisce alle <time>13:30</time> da lunedí a venerdí.</p>
+
+    <p>Ho un appuntamento dal medico <time datetime="2023-03-14 14:20">Martedí</time>.</p>
+
+    <p>Non <u>o</u> capito dove é l'errore.</p> 
+
+    <p>Mamma dice sempre
+        <q>Stupido é chi lo stupido fa</q>
+    </p>
+
+    <label for="file">Mancano ancora pochi tag, progresso:</label>
+    <progress id="file" value="80" max="100"> 80% </progress> 
+
+    <pre>
+        Questo testo,
+        proprio questo testo
+        é stato scritto cosí come lo vedi
+        si                                anche questo assurdo spazio
+        Giá. Ed é stato fatto con il tag "pre"
+    </pre> 
+
+    <p>
+        Questo tag wbr serve per scrivere cose lunghe <wbr>tipotuttoattaccatocosícheilbrowsercapisce<wbr> 
+        che non deve spezzarle quando ridimensiono.
+    </p>
+    
+    <p>
+    Per indicare una variabile si puó usare il tag <code>var</code> e l'effetto che si ottiene é <var>int</var>
+    </p>
+
+    <p>
+        Grazie per essere arrivati sin qui. Manca ancora il tag track per i video. Lasciamoci con un meme che dovrebbe avere un file di sottotitoli.
+    </p>
+
+    <video width="320" height="240" controls>
+        <source src="./assets/risitas.mp4" type="video/mp4">
+        <track src="qui vanno i sottotitoli" kind="subtitles" srclang="es" label="Espagnol">
+      </video>
+
+
+</body>
+</html>
