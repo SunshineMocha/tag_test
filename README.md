@@ -1,2 +1,2 @@
 # tag_test
-Esercizio sui &lt;tag> HTML
+Esercizio sui tag HTML
