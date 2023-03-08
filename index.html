@@ -1,0 +1,80 @@
+<!DOCTYPE html>  <!-- Questo é un commento, creato con la shortcut CTRL+K+C. Al suo fianco, il tag !DOCTYPE -->
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test dei tag HTML</title>
+    <base href="./">
+</head>
+<body> <!--TAG BODY-->
+   
+    <a href="https://www.google.com" target="_blank"> Apri Google da qui! </a> <br> <br> <br> <!-- TAG BREAK -->
+    La <abbr title="Azienda Sanitaria Locale">ASL</abbr> é l'ente che si occupa della sanitá nazionale. <br> <br>
+    <address>
+        Scritto da <a href="mailto:mailfasulla123@hello.it">un tipo qualunque</a> <br>
+        Ci trovi sul sito <a href="https://www.google.com" target="_blank"> Google</a> <br>
+        via Fasulla, 123 <br>
+        Genova <br>
+    </address>
+
+    <h3>Clicca sulla scritta Liguria!</h3> <br>
+
+    <img src="https://www.appaltiecontratti.it/wp-content/uploads/cartina-italia-politica.jpg" alt="Cartina politica dell'Italia" usemap="#Carta_Politica" >
+    <map name="Carta_Politica">
+        <area shape="circle" coords="150,325,25" href="./second_page.html" alt="Liguria">
+    </map>
+
+    <aside>
+        <h3>Liguria</h3>
+        <p>La Liguria é la regione dove vivo</p>
+    </aside>
+
+    <h3>Ascolta Clickbait dei C-Side!</h3>
+    <audio controls>
+        <source src="./assets/Clickbait.mp3" type="audio/mp3">
+        Oops! Sembra che il tuo browser non supporti questo audio tag!
+    </audio> 
+    
+    <br>
+
+    <strong>Questo testo é in grassetto e scritto con "strong" </strong> <br>
+    <b>Questo testo é in grassetto e scritto con "b"</b> <br>
+
+    <a href="">Questo é un tag base a ./</a>
+
+    <ul>
+        <li> Allievo <bdi>Luca</bdi>: 420 punti </li>
+        <li> Allievo <bdi>Marco</bdi>: 069 punti </li>
+    </ul>
+
+    <bdo dir="rtl">Whoops, chi ha invertito il senso di marcia?</bdo> <br> <br>
+
+
+    Questo sito é disponibile pubblicamente su GitHub. Cosa é GitHub? Vediamolo su Wikipedia! <br>
+    <blockquote cite="https://it.wikipedia.org/wiki/GitHub" >
+        GitHub è un servizio di hosting per progetti software, di proprietà della società GitHub Inc., 
+        con sede legale a San Francisco in California.
+    </blockquote>
+
+    <button type="button">Clicca qui...oppure no</button> <br> <br>
+
+    Qui sotto puoi osservare un bellissimo quadrato nero. <br> È proprio bellissimo!! <br> <br>
+
+    <canvas id="myCanvas">
+        Il tuo browser non supporta questo tag canvas x_x
+        </canvas>
+        
+        <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, 80, 80);
+        </script> 
+
+    <br>
+
+    La pagina sta diventando un po' lunghina...clicca <a href="./third_page.html">qui</a>
+
+</body>
+</html>
