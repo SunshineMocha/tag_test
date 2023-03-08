@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="" href="">
+    <style>
+        h1 {color:red;}
+        p {color:blue;}
+      </style>
+    <title>Seconda pagina di esempi</title>
+</head>
+<body>
+    Se vuoi tornare alla <a href="./index.html">prima pagina</a>. <br>
+
+    <table>
+        <colgroup>
+            <col span="3" style="background-color: aqua;" >
+        </colgroup>
+        <caption>Dati</caption>
+        <tr><th>1a colonna</th><th>2a colonna</th><th>3a colonna</th></tr>
+        <tr><td>dato 1</td><td>dato 2</td><td>dato 3</td></tr>
+        <tr><td>dato 2</td><td></td><td>dato 4</td></tr>
+        <tr><td>dato 3</td><td>dato 4</td><td>dato 5</td></tr>
+    </table>
+
+    <h1>Oh no!</h1>
+    <img src="./assets/ono2.jpg" alt="Modelli MMD di Alga e Nori">
+    <p><cite>Alga scopre l'inganno</cite> di Mocha. Creato con Miku Miku Dance.</p>
+
+    Comunque mettere la funzione <code>code</code> in ordine alfabetico e non in cima é una cattiveria, <br>
+    l'avrei potuta usare per spiegare gli esempi. <br>
+
+    <ul>
+        <li><data value="1">Hey!</data></li>
+        <li><data value="2">You!</data></li>
+        <li><data value="3">Yes, you!</data></li>
+    </ul>
+
+    <label for="pronouns">So che tipo ormai é da un po' che sei qui ma...scegli i tuoi pronomi</label> <br>
+    <input list="pronouns" name="pronome" id="pronome">
+    
+    <datalist id="pronouns">
+      <option value="lui">
+      <option value="lei">
+      <option value="preferisco non specificare">
+    </datalist> 
+
+    Ecco una lista di cosa mi piace e come <br> 
+    <dl> <!-- description list --> 
+        <dt>Caffé</dt> <!--Define term--> 
+        <dd>Caldo, non zuccherato</dd> <!-- description--> 
+        <dt>Latte</dt>
+        <dd>Freddo, zuccherato</dd>
+      </dl> 
+
+      <p>A me piace anche <del>il kiwi</del> <ins>l'anguria!</ins>!</p> 
+
+      <details>
+        <summary>Qui si nasconde del testo</summary>
+        <p>Oh no, hai trovato il testo nascosto!</p>
+      </details> 
+
+      <p><dfn>Questo</dfn> é un tag diverso da <code>abbr</code> che non fa proprio la stessa cosa</p> 
+
+      <dialog open>Siamo molto aperti al dialogo</dialog> 
+
+      <div class="myDiv">
+        <h2>Un titolo per una sezione diversa</h2>
+        <p>Un elemento diverso per cambiare?</p>
+      </div>
+      
+      <em>Questo testo é in grassetto e scritto con <code>em</code> </em> <br>
+      <i>Questo testo é in grassetto e scritto con <code>i</code></i> <br> <br> <br>
+
+      <form action="./third_page.html">
+        <label for="fname">Nome:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Cognome:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Invia"> <- Se clicchi ti riporto in cima
+      </form> 
+
+      <p>Se premi <kbd>F5</kbd> puoi refreshare la pagina.</p>
+
+      <form action="./third_page.html">
+        <fieldset>
+          <legend>Il tuo OC:</legend>
+          <label for="fname">Nome:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Cognome:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="birthday">Compleanno:</label>
+          <input type="date" id="birthday" name="birthday"><br><br>
+          <input type="submit" value="Invia"> <- come prima, ti riporto in cima alla pagina
+        </fieldset>
+      </form> 
+
+      <h2>Praticamente questo dovrebbe essere formattato con una cosa che ancora non facciamo, ma nell'head c'é il suo codice</h2>
+    
+      <main>
+            HEEEEY QUESTA È UNA COSA SPECIALE PERCHÈ STA NEL MAIN, QUI NON CI DOVREBBERO ANDARE COSE CHE SONO GIA ALL'ESTERNO! <br>
+            e ce ne puó essere solo uno.
+      </main>
+
+      <p>Non dimenticarti, l'elemento sopra é il <mark>main</mark> e questo é un <code>mark</code>...non questo, l'altro.</p>
+
+      Questo é un metro <br>
+      <label for="space_A">Il tuo spazio</label>
+      <meter id="space_A" value="2" min="0" max="10">2 su 10</meter><br>
+      
+      <label for="space_B">Il mio spazio</label>
+      <meter id="space_B" value="0.8">80%</meter> 
+
+      <nav>
+        <a href="index.html">prima</a>
+        <a href="second_page.html">liguria</a>
+        <a href="./third_page.html">questa pagina</a>
+      </nav> <br>
+
+      <script>
+        document.write("Ciao Pippo")
+        </script>
+        <noscript>No javascript? x_x</noscript> <br>
+
+        Immagine in embed anche se in realtá puoi metterci un po' quello che vuoi tipo altre pagine o video<br>
+        <object data="./assets/ono2.jpg"></object>
+
+        <ol>
+            <li>ah si</li>
+            <li>Immagino questa sia una lista ordinata</li>
+            <li>tipo qui c'é il numero 3</li>
+        </ol>
+
+        Questo é un tasto di scelta, anche se non sceglie nulla <br>
+        <form action="third_page.html">
+        <label for="console">Scegli una console:</label>
+        <select  name="console" id="console">
+          <optgroup label="Moderne">
+            <option value="Switch">Switch</option>
+            <option value="PS5">PS5</option>
+            <option value="XBox Serie X">XBox Serie X</option>
+          </optgroup>
+        </select> <br>
+        Beh, il tastino che ti riporta in cima non lo metto neanche piú. <br>
+    </form>
+
+    <h3>Elementi output</h3>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output>
+        </form> <br>
+
+        <object data="./assets/Clickbait.mp3">
+            <param name="autoplay" value="true">
+          </object>     
+
+    <p>Ed ora, una immagine che si trasforma se ridimensioni la finestra</p> 
+    
+    <picture>
+        <source media="(min-width:650px)" srcset="./assets/Blue.png">
+        <source media="(min-width:465px)" srcset="./assets/ono2.jpg">
+        <img src="./assets/Green.jpg" alt="Green" style="width:auto;">
+      </picture> <br>
+
+      <p>Questo é ruby text</p>
+
+      <ruby>
+        漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+        </ruby> 
+
+        <p><s>Sconti fino a domani!</s></p>
+        <p>MERCE ESAURITA!</p> 
+
+        <p>Il tuo computer ti sta dicendo qualcosa</p>
+
+        <p><samp> Qualcosa.<br>Premi F1 per continuare</samp></p>
+
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML = "Ciao Pipposcript";
+        </script> 
+
+<section>
+    <h2>Mocha </h2>
+    <p>Questa é una sezione per descrivere chi é Mocha</p>
+    </section>
+    
+    <section>
+    <h2>Mocha</h2>
+    <p>Questa é una sezione per conoscere Mocha</p>
+    </section> 
+
+    <p>testo</p>
+    <p><small>testo piccolo</small></p> 
+
+
+    <p>Il cielo é <span style="color:blue">blu</span>.</p> 
+
+    <p>Mi sento molto <sub>giú</sub>.</p>
+    <p>Sono al <sup>settimo cielo</sup>.</p>
+
+    Ed ora un bellissimo cerchio, nero con i contorni blu. <br>
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="blue" />
+    </svg> 
+
+    <table>
+        <thead><tr><th>Mese</th><th>Risparmi</th></tr></thead>
+        <tbody><tr><td>Gennaio</td><td>$100</td></tr><tr><td>Febbraio</td><td>$80</td></tr></tbody>
+        <tfoot><tr><td>Totale</td><td>$180</td></tr></tfoot>
+      </table> 
+
+    <p>Continua su una terza pagina di esempi <a href="./fourth_page.html">qui</a>!</p>
+
+</body>
+</html>
